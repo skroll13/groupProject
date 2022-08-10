@@ -3,7 +3,6 @@
 
 let dateInput = document.querySelector('#dateInput')
 let searchButton = document.querySelector('#search')
-let state = document.getElementById('state');
 let displayMoonPhase = document.querySelector(".displayMoonPhase")
 
 searchButton.addEventListener('click', (e) => {
