@@ -175,7 +175,7 @@ body{
 } */
 
 
-  }
+  
 
 .cards{
   display: flex;
@@ -240,8 +240,8 @@ label{
 p{
   color: rgb(255, 0, 217);
   font-weight: bold;
-
-section{
+}
+.section{
   position: relative;
   width: 100%;
   height: 100vh;
