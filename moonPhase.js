@@ -237,6 +237,7 @@ const signPicker = (dateOutput) => {
 
 
 
+<<<<<<< HEAD
 // Capricorn Dates: December 22 – January 19 1222 - 119 Capricorn
 // Aquarius Dates: January 20 – February 18 120 -218 Aquarius
 // Pisces Dates: February 19 – March 20 219 - 320  Pisces
@@ -250,5 +251,14 @@ const signPicker = (dateOutput) => {
 // Scorpio Dates: October 23 – November 21 1023 - 1121 Scorpio
 // Sagittarius Dates: November 22 – December 21 1122 - 1221 Sagittarius
 =======
+=======
+
+
+for(var i = 0; i < usStates.length; i++) {
+    var option = document.createElement("option");
+    option.text = usStates[i].name;
+    option.value = usStates[i].abbreviation;
+    state.add(option);
+>>>>>>> d09cfb0 (merge to the main)
 }
 >>>>>>> d3e244c (new changes to website)
