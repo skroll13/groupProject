@@ -214,7 +214,7 @@ var usStates = [
     { name: 'WYOMING', abbreviation: 'WY' }
 ];
 
-var state = document.getElementById('state');
+
 
 for(var i = 0; i < usStates.length; i++) {
     var option = document.createElement("option");
