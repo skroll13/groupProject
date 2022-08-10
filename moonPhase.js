@@ -186,6 +186,10 @@ const astroMain = async (data) =>{
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d09cfb0 (merge to the main)
 
 const signPicker = (dateOutput) => {
     let dateSlice = dateOutput.slice(5).split('-').join('')
