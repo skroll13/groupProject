@@ -230,3 +230,4 @@ searchButton.addEventListener('click', (e) => {
     getData(date,state)
 })
 
+
