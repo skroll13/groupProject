@@ -34,7 +34,7 @@ body{
 
 /* main image and text*/
 .container {
-    position: relative;
+    position: absolute;
     text-align: center;
     color: white;
   }
@@ -53,7 +53,7 @@ body{
   img{
     height: 80%;
     width: 80%;
-    opacity: .65;
+    opacity: .45;
     
 }
 
@@ -114,61 +114,87 @@ body{
 
   .exp2{
 
-    margin-top:10%;
-    margin-left: 40%;
+    margin-top:60%;
+    /* margin-left: 40%; */
 
   }
 
 
 
 
-  /* divs for moon phases */
   
 
-  .div1{
-    position: absolute;
-    left: 500px;
 
+  .button{
+    display: flex;
+    position: relative;
+    margin: 15%;
+    font-family: cursive;
+    color: #64939a;
+    justify-content: center;
+  
   }
 
-  .div2{
-    position: absolute;
-    left: 500px;
 
-  }
 
-  .div1{
-    position: absolute;
-    left: 500px;
+.cardContainer{
 
-  }
+  display: inline-block;
+  justify-content: space-around;
+ 
+  
+}
 
-  .div1{
-    position: absolute;
-    left: 500px;
 
-  }
+.card{
 
-  .div1{
-    position: absolute;
-    left: 500px;
+  margin: 10%;
+  color: #346780;
+  font-family: cursive;
+  margin-left: 195%;
+  background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
+  text-align: center;
+  /* height: auto;
+  width: auto; */
+}
 
-  }
 
-  .div1{
-    position: absolute;
-    left: 500px;
 
-  }
+.hey{
 
-  .div1{
-    position: absolute;
-    left: 500px;
+  margin: 20px;
+  
+}
 
-  }
+ /* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 
-  .div1{
-    position: absolute;
-    left: 500px;
+} */
 
-  }
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+section .star{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+section .star.star1{
+  
+}
