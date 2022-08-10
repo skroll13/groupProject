@@ -1,1 +1,174 @@
-hello
+
+
+body{
+   margin: 0px;
+   background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
+   
+}
+
+
+
+/* colors */
+
+.textColor1{
+    color: #64939a;
+}
+
+.textColor2{
+    color: #346780;
+}
+
+.textColor3{
+    color: #0b182d;
+}
+
+.textColor4{
+    color: #8c9494;
+}
+
+.textColor5{
+    color: #44787c;
+}
+
+
+
+/* main image and text*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+
+
+.centered {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:cursive ;
+  }
+
+
+  img{
+    height: 80%;
+    width: 80%;
+    opacity: .65;
+    
+}
+
+
+  /* menu bar */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b182d;
+    font-family: cursive;
+  }
+  
+  li {
+    float: left;
+    font-family: cursive;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+    
+  }
+
+  .display{
+    display: block;
+    margin: 0;
+    padding: 16px;
+  }
+  
+  li a:hover {
+    background-color: #8c9494;
+  }
+
+
+
+  .moon{
+    height: 100px;
+    width: 100px;
+    border-left: 15px solid #8c9494;
+    border-radius: 100%;
+    transform: rotate(-40deg);
+    
+  }
+  
+
+  .cursive{
+    font-family: cursive;
+  }
+
+
+
+  .exp2{
+
+    margin-top:10%;
+    margin-left: 40%;
+
+  }
+
+
+
+
+  /* divs for moon phases */
+  
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div2{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
+
+  .div1{
+    position: absolute;
+    left: 500px;
+
+  }
