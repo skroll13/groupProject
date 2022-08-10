@@ -1,27 +1,37 @@
 let button = document.querySelector('.button')
-const jokeDiv = document.querySelector('joke')
-let jokes = ''
+const displayJoke = document.querySelector(".displayJoke")
+let htmlFragment = ''
 
-// li.append(".joke")
+const createFragment = data => {
+  if (data.type == 'single'){
+  htmlFragment =`<p>${data.joke}</p>`
+  console.log(data.type)
+  console.log(htmlFragment)
+  } else if 
+    (data.type == 'twopart'){
+      htmlFragment = `<p>${data.setup} ${data.delivery}</p>`
+      console.log(data.type)
+      console.log(htmlFragment)
+    }
+    
+  displayJoke.innerHTML = htmlFragment
+
+  }
 const joke = async () => {
   try {
-    const response = await fetch(
-      `https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw`
-    )
-    // const response = await fetch(`https://backend-omega-seven.vercel.app/api/getjoke`)
+    const response = await fetch(`https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit`)
     const data = await response.json()
-    const jokes = data[0]
-    // console.log(data[0])
-    console.log(jokes)
+    const jokes = data
+    // console.log(jokes)
+    createFragment(jokes)
+    return jokes
   } catch (e) {
     console.log('ERROR!', e)
   }
 }
 
 button.addEventListener('click', e => {
-  joke()
+ joke()
+  
 })
 
-function displayJoke (data) {
-  const jokes = data.object[0]
-}
