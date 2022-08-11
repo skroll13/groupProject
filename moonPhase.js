@@ -3,7 +3,6 @@ link
 
 let dateInput = document.querySelector('#dateInput')
 let searchButton = document.querySelector('#search')
-let state = document.getElementById('state');
 let displayMoonPhase = document.querySelector(".displayMoonPhase")
 
 searchButton.addEventListener('click', (e) => {
@@ -137,6 +136,7 @@ for(var i = 0; i < usStates.length; i++) {
     state.add(option);
 }
 
+
 // Veronica T's code
 // let data;
 //     const getData = async (date,state) => { //main function
@@ -167,5 +167,6 @@ searchButton.addEventListener('click', (e) => {
     let state = state.value
     getData(date,state)
 })
+
 
 

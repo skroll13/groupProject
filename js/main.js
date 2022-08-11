@@ -2,15 +2,15 @@ let button = document.querySelector('.button')
 const displayJoke = document.querySelector(".displayJoke")
 let htmlFragment = ''
 
-const createFragment = data => {
-  if (data.type == 'single'){
-  htmlFragment =`<p>${data.joke}</p>`
-  console.log(data.type)
+const createFragment = jokeData => {
+  if (jokeData.type == 'single'){
+  htmlFragment =`<p>${jokeData.joke}</p>`
+  console.log(jokeData.type)
   console.log(htmlFragment)
   } else if 
-    (data.type == 'twopart'){
-      htmlFragment = `<p>${data.setup} ${data.delivery}</p>`
-      console.log(data.type)
+    (jokeData.type == 'twopart'){
+      htmlFragment = `<p>${jokeData.setup} ${jokeData.delivery}</p>`
+      console.log(jokeData.type)
       console.log(htmlFragment)
     }
     
@@ -20,8 +20,8 @@ const createFragment = data => {
 const joke = async () => {
   try {
     const response = await fetch(`https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit`)
-    const data = await response.json()
-    const jokes = data
+    const jokeData = await response.json()
+    const jokes = jokeData
     // console.log(jokes)
     createFragment(jokes)
     return jokes
