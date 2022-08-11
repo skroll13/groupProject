@@ -1,0 +1,14 @@
+.col-md-2{
+  display: flex;
+  border: dotted;
+  padding: 100px 0px 10px 0px;
+  margin: auto;
+}
+
+.col-md-{
+  display: flex;
+  border: dotted;
+  padding: 100px 0px 10px 0px;
+  justify-content: space-around;
+  align-items: stretch;
+}
