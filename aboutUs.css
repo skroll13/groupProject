@@ -39,3 +39,12 @@ body{
   width: 60%;
   opacity:inherit;
 }
+
+.quotes{
+  color:white;
+  text-align:right;
+}
+
+blockquote{
+  color:white;
+}
