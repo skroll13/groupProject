@@ -1,0 +1,50 @@
+.col-md-2{
+  display: flex;
+  /* border: dotted white; */
+  padding: 10px -15px 10px -15px;
+  margin: 30px;
+}
+
+.col-md-{
+  display: flex;
+  /* border: dotted; */
+  padding: 100px 0px 10px 0px;
+  align-content: stretch;
+  align-items: stretch;
+  margin-top:50px;
+}
+
+p{
+  color:white;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+
+.textColor1 {
+  color: #64939a;
+}
+
+.textColor2 {
+  color: #346780;
+}
+
+body{
+  background-image: url("/images/pexels-frank-cone-3214110.jpg")
+
+}
+
+.rounded{
+  height: 60%;
+  width: 60%;
+  opacity:inherit;
+}
+
+.quotes{
+  color:white;
+  text-align:right;
+}
+
+blockquote{
+  color:white;
+}

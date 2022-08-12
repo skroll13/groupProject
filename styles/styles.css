@@ -1,7 +1,10 @@
 body{
-  margin: 0px;
-  background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
+
+   margin: 0px;
+   background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
   
+
+
 }
 
 
@@ -175,6 +178,23 @@ body{
 
 
 
+
+/* .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+
+
+
+
+
+
+
+
+
+
+
 .cards{
  display: flex;
  flex-direction: row;
@@ -239,6 +259,7 @@ p{
  color: rgb(255, 0, 217);
  font-weight: bold;
 }
+
 
 /* section{
  position: relative;
