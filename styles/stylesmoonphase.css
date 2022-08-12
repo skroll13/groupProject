@@ -79,8 +79,7 @@ body{
 
     display: flex;
     justify-content: space-around;
-   
-    
+
    
    
     
@@ -90,8 +89,8 @@ body{
    }
 
    .card{
-    width: 50rem;
-    height: 50rem;
+    width: 40rem;
+    height: 40rem;
     color: #346780;
     font-family: cursive;
     background-image: url(https://t4.ftcdn.net/jpg/03/11/72/63/360_F_311726370_WUopUflJYzZWTiIPdnP2yZ3xGaNABHZY.jpg);
