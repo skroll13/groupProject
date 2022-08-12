@@ -1,7 +1,7 @@
 # What Was the Moon Phase The Day You Were Born?
 
 ## Description:
-Welcome to your guide to moon phases, based on your date of birth. Glad to have you here! In addition to accessing your moon phase, you will be provided your horoscope for the day you visit and a joke about software developers.
+Welcome to your guide to moon phases, based on your date of birth. Glad to have you here! In addition to accessing your birth moon phase, you will be provided your horoscope for the day you visit and a joke about software developers.
 
 ## How to use this project:
 Here at What Was the Moon Phase The Day You Were Born, we believe that the simplicity of the website is key to a positive user experience. Therefore, to use this project, simply enter your date of birth into the field provided.
