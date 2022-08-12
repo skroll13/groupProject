@@ -1,9 +1,6 @@
 body{
-
-   margin: 0px;
-   background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
-  
-
+  margin: 0px;
+  background-image: url(https://t4.ftcdn.net/jpg/03/11/72/63/360_F_311726370_WUopUflJYzZWTiIPdnP2yZ3xGaNABHZY.jpg);
 
 }
 
@@ -97,14 +94,6 @@ body{
 
 
 
- .moon{
-   height: 100px;
-   width: 100px;
-   border-left: 15px solid #8c9494;
-   border-radius: 100%;
-   transform: rotate(-40deg);
-   
- }
  
 
  .cursive{
@@ -125,22 +114,26 @@ body{
 
  
 
-  .button1{
-    display: flex;
-    position: relative;
-    margin: 15%;
-    font-family: cursive;
-    color: #64939a;
-    justify-content: center;
-  
-  }
+ 
+
+ .button1{
+   display: flex;
+   position: relative;
+   margin: 15%;
+   font-family: cursive;
+   color: #64939a;
+   justify-content: center;
+ 
+ }
 
 
 
 .cardContainer{
 
- display: inline-block;
+ display: flex;
  justify-content: space-around;
+ height: 500px;
+ width: 500px;
 
  
 }
@@ -152,10 +145,11 @@ body{
  color: #346780;
  font-family: cursive;
  margin-left: 195%;
- background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
+ /* background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download); */
  text-align: center;
  /* height: auto;
  width: auto; */
+ background-color: #0b182d;
 }
 
 
@@ -173,24 +167,6 @@ body{
  font-family: 'Times New Roman', Times, serif;
 
 } */
-
-
-  
-
-
-
-/* .cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
-
-
-
-
-
-
-
 
 
 
@@ -255,30 +231,22 @@ label{
  color: orange;
 }
 
-p{
-  color: rgb(255, 0, 217);
-  font-weight: bold;
-}
-.section{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: #000200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
 
-section .star{
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- pointer-events: none;
-}
-
-/* section .star.star1{ */
+.displayJokesAndPhase{
+  text-align: center;
+  font-family: cursive;
+  color: #64939a;
   
+}
+ 
+.zindex1{
+  z-index: 1;
+  /* position: absolute; */
+}
+
+.zindex2{
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+}
