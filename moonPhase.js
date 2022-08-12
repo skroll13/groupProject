@@ -4,7 +4,12 @@
 
 // this is where we'll have the code for the moon phase api pull
 
+<<<<<<< HEAD
 >>>>>>> d3e244c (new changes to website)
+=======
+// this is where we'll have the code for the moon phase api pull
+
+>>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
 let dateInput = document.querySelector('#dateInput')
 let searchButton = document.querySelector('#search')
 let state = document.getElementById('state');
@@ -12,9 +17,12 @@ let displayMoonPhase = document.querySelector(".displayMoonPhase")
 const displayJoke = document.querySelector(".displayJoke")
 let htmlFragment = ''
 <<<<<<< HEAD
+<<<<<<< HEAD
 let displayHoroscope = document.querySelector('.displayHoroscope')
 =======
 >>>>>>> d3e244c (new changes to website)
+=======
+>>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
 
 const createFragment1 = jokeData => {
     if (jokeData.type == 'single'){
@@ -37,9 +45,12 @@ searchButton.addEventListener('click', (e) => {
     moonMain(dateOutput, stateOutput)
     joke()
 <<<<<<< HEAD
+<<<<<<< HEAD
     signPicker(dateOutput)
 =======
 >>>>>>> d3e244c (new changes to website)
+=======
+>>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
 })
 
 const createFragment = (data, moonText) =>{
@@ -182,6 +193,7 @@ const joke = async () => {
     console.log('ERROR!', e)
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 console.log(`test`)
@@ -252,3 +264,6 @@ const signPicker = (dateOutput) => {
 =======
 }
 >>>>>>> d3e244c (new changes to website)
+=======
+}
+>>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264

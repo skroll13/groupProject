@@ -1,14 +1,9 @@
 body{
-<<<<<<< HEAD
 
-   margin: 0px;
-   background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
-  
-
-=======
   margin: 0px;
   background-image: url(https://t4.ftcdn.net/jpg/03/11/72/63/360_F_311726370_WUopUflJYzZWTiIPdnP2yZ3xGaNABHZY.jpg);
->>>>>>> d3e244c (new changes to website)
+
+
 
 }
 
@@ -122,7 +117,7 @@ body{
 
  
 
- 
+
 
  .button1{
    display: flex;
@@ -246,6 +241,7 @@ label{
   font-family: cursive;
   color: #64939a;
   
+
 }
  
 .zindex1{
