@@ -1,12 +1,20 @@
+
+<<<<<<< HEAD
+=======
+
 // this is where we'll have the code for the moon phase api pull
 
+>>>>>>> d3e244c (new changes to website)
 let dateInput = document.querySelector('#dateInput')
 let searchButton = document.querySelector('#search')
 let state = document.getElementById('state');
 let displayMoonPhase = document.querySelector(".displayMoonPhase")
 const displayJoke = document.querySelector(".displayJoke")
 let htmlFragment = ''
+<<<<<<< HEAD
 let displayHoroscope = document.querySelector('.displayHoroscope')
+=======
+>>>>>>> d3e244c (new changes to website)
 
 const createFragment1 = jokeData => {
     if (jokeData.type == 'single'){
@@ -28,7 +36,10 @@ searchButton.addEventListener('click', (e) => {
         console.log(stateOutput)
     moonMain(dateOutput, stateOutput)
     joke()
+<<<<<<< HEAD
     signPicker(dateOutput)
+=======
+>>>>>>> d3e244c (new changes to website)
 })
 
 const createFragment = (data, moonText) =>{
@@ -170,6 +181,7 @@ const joke = async () => {
   } catch (e) {
     console.log('ERROR!', e)
   }
+<<<<<<< HEAD
 }
 
 console.log(`test`)
@@ -237,3 +249,6 @@ const signPicker = (dateOutput) => {
 // Libra Dates: September 23 – October 22 923 - 1022 Libra
 // Scorpio Dates: October 23 – November 21 1023 - 1121 Scorpio
 // Sagittarius Dates: November 22 – December 21 1122 - 1221 Sagittarius
+=======
+}
+>>>>>>> d3e244c (new changes to website)
