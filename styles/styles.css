@@ -125,16 +125,15 @@ body{
 
  
 
-
- .button1{
-   display: flex;
-   position: relative;
-   margin: 15%;
-   font-family: cursive;
-   color: #64939a;
-   justify-content: center;
- 
- }
+  .button1{
+    display: flex;
+    position: relative;
+    margin: 15%;
+    font-family: cursive;
+    color: #64939a;
+    justify-content: center;
+  
+  }
 
 
 
