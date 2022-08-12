@@ -8,27 +8,13 @@ const displayJoke = document.querySelector(".displayJoke")
 let htmlFragment = ''
 let displayHoroscope = document.querySelector('.displayHoroscope')
 
-const createFragment1 = jokeData => {
-    if (jokeData.type == 'single'){
-    htmlFragment =`<p>${jokeData.joke}</p>`
-    console.log(jokeData.type)
-    console.log(htmlFragment)
-    }else if 
-      (jokeData.type == 'twopart'){
-        htmlFragment = `<p>${jokeData.setup} ${jokeData.delivery}</p>`
-        console.log(jokeData.type)
-        console.log(htmlFragment)
-      }
-    displayJoke.innerHTML = htmlFragment
-}
-
 searchButton.addEventListener('click', (e) => {
         let dateOutput = dateInput.value
-        let stateOutput = state.value
-        console.log(stateOutput)
-    moonMain(dateOutput, stateOutput)
-    joke()
+        // let stateOutput = state.value
+        // console.log(stateOutput)
+    moonMain(dateOutput)
     signPicker(dateOutput)
+    joke()
 })
 
 const createFragment = (data, moonText) =>{
@@ -37,14 +23,28 @@ const createFragment = (data, moonText) =>{
 }
 
 const createHoroscope = (obj) => {
-    let htmlfragment = `<p>${obj.horoscope}</p>`
+    let htmlfragment = `<p>Your horoscope for today: ${obj.horoscope}</p>`
     displayHoroscope.innerHTML = htmlfragment
 }
 
+const createFragment1 = jokeData => {
+    if (jokeData.type == 'single'){
+    htmlFragment =`<p>And while you're here, would you like to hear a joke? Oh good! Here you go: ${jokeData.joke}</p>`
+    console.log(jokeData.type)
+    console.log(htmlFragment)
+    }else if 
+      (jokeData.type == 'twopart'){
+        htmlFragment = `<p>And while you're here, would you like to hear a joke? Oh good! Here you go: ${jokeData.setup} ${jokeData.delivery}</p>`
+        console.log(jokeData.type)
+        console.log(htmlFragment)
+      }
+    displayJoke.innerHTML = htmlFragment
+}
+
 let data;
-const moonMain = async (dateOutput, stateOutput) => {
+const moonMain = async (dateOutput) => {
     try{
-    let fetchData = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${stateOutput}/${dateOutput}?unitGroup=us&key=PXLCYVMHK8W88EN9J7UFB2NFN&include=days&elements=moonphase,sunrise,sunset&contentType=json`)
+    let fetchData = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Kansas/${dateOutput}?unitGroup=us&key=PXLCYVMHK8W88EN9J7UFB2NFN&include=days&elements=moonphase,sunrise,sunset&contentType=json`)
     let result = await fetchData.json(); //saving the data in a variable named 'result' and at the same time converting it to an object or an array of objects
     data = result; // this is assigning value to the variable 'data' (created on line 10)
     // the difference between fetchData - this is data that's being returned as a string and 'data' is an object or an array of objects
@@ -152,12 +152,12 @@ var usStates = [
     { name: 'WYOMING', abbreviation: 'WY' }
 ];
 
-for(var i = 0; i < usStates.length; i++) {
-    var option = document.createElement("option");
-    option.text = usStates[i].name;
-    option.value = usStates[i].name.split(" ").join("%20");
-    state.add(option);
-}
+// for(var i = 0; i < usStates.length; i++) {
+//     var option = document.createElement("option");
+//     option.text = usStates[i].name;
+//     option.value = usStates[i].name.split(" ").join("%20");
+//     state.add(option);
+// }
 
 const joke = async () => {
   try {

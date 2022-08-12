@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    background-image: url(https://t4.ftcdn.net/jpg/03/11/72/63/360_F_311726370_WUopUflJYzZWTiIPdnP2yZ3xGaNABHZY.jpg);
+  
+  }
+  .card{
+    color: #346780;
+        font-family: cursive;
+        background-image: url(https://t4.ftcdn.net/jpg/03/11/72/63/360_F_311726370_WUopUflJYzZWTiIPdnP2yZ3xGaNABHZY.jpg);
+  }
+  /* colors */
+  
+  .textColor1 {
+    color: #64939a;
+  }
+  
+  .textColor2 {
+    color: #346780;
+  }
+  
+  .textColor3 {
+    color: #0b182d;
+  }
+  
+  .textColor4 {
+    color: #8c9494;
+  }
+  
+  .textColor5 {
+    color: #44787c;
+  }
+  
+  
+  /* menu bar */
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b182d;
+    font-family: cursive;
+  }
+  
+  li {
+    float: left;
+    font-family: cursive;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  
+  
+  }
+  
+  li a:hover {
+    background-color: #8c9494;
+  }
+     
+  
+     
+   .cursive{
+    font-family: cursive;
+   }
