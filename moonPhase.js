@@ -4,6 +4,11 @@
 
 // this is where we'll have the code for the moon phase api pull
 
+<<<<<<< HEAD
+>>>>>>> d3e244c (new changes to website)
+=======
+// this is where we'll have the code for the moon phase api pull
+
 >>>>>>> d3e244c (new changes to website)
 let dateInput = document.querySelector('#dateInput')
 let searchButton = document.querySelector('#search')
@@ -12,7 +17,10 @@ let displayMoonPhase = document.querySelector(".displayMoonPhase")
 const displayJoke = document.querySelector(".displayJoke")
 let htmlFragment = ''
 <<<<<<< HEAD
+<<<<<<< HEAD
 let displayHoroscope = document.querySelector('.displayHoroscope')
+=======
+>>>>>>> d3e244c (new changes to website)
 =======
 >>>>>>> d3e244c (new changes to website)
 
@@ -37,7 +45,10 @@ searchButton.addEventListener('click', (e) => {
     moonMain(dateOutput, stateOutput)
     joke()
 <<<<<<< HEAD
+<<<<<<< HEAD
     signPicker(dateOutput)
+=======
+>>>>>>> d3e244c (new changes to website)
 =======
 >>>>>>> d3e244c (new changes to website)
 })
@@ -182,6 +193,7 @@ const joke = async () => {
     console.log('ERROR!', e)
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 console.log(`test`)
@@ -260,5 +272,8 @@ for(var i = 0; i < usStates.length; i++) {
     option.value = usStates[i].abbreviation;
     state.add(option);
 >>>>>>> d09cfb0 (merge to the main)
+}
+>>>>>>> d3e244c (new changes to website)
+=======
 }
 >>>>>>> d3e244c (new changes to website)
