@@ -34,7 +34,7 @@ body{
 
 
 /* main image and text*/
-.container {
+.mainImageAndText {
    position: absolute;
    text-align: center;
    color: white;
@@ -100,7 +100,8 @@ body{
  
 
  .cursive{
-   font-family: cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
  }
 
 
@@ -123,9 +124,11 @@ body{
    display: flex;
    position: relative;
    margin: 15%;
-   font-family: cursive;
+  
    color: #64939a;
    justify-content: center;
+   cursor: pointer;
+ 
  
  }
 
