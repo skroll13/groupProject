@@ -1,68 +1,20 @@
-
-<<<<<<< HEAD
-=======
-
 // this is where we'll have the code for the moon phase api pull
 
-<<<<<<< HEAD
->>>>>>> d3e244c (new changes to website)
-=======
-// this is where we'll have the code for the moon phase api pull
-
-<<<<<<< HEAD
->>>>>>> d3e244c (new changes to website)
-=======
->>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
->>>>>>> affff3bbdb1d8801e017a147b6b37b9d89d9e438
 let dateInput = document.querySelector('#dateInput')
 let searchButton = document.querySelector('#search')
 let state = document.getElementById('state');
 let displayMoonPhase = document.querySelector(".displayMoonPhase")
 const displayJoke = document.querySelector(".displayJoke")
 let htmlFragment = ''
-<<<<<<< HEAD
-<<<<<<< HEAD
 let displayHoroscope = document.querySelector('.displayHoroscope')
-=======
->>>>>>> d3e244c (new changes to website)
-=======
-<<<<<<< HEAD
->>>>>>> d3e244c (new changes to website)
-=======
->>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
->>>>>>> affff3bbdb1d8801e017a147b6b37b9d89d9e438
-
-const createFragment1 = jokeData => {
-    if (jokeData.type == 'single'){
-    htmlFragment =`<p>${jokeData.joke}</p>`
-    console.log(jokeData.type)
-    console.log(htmlFragment)
-    }else if 
-      (jokeData.type == 'twopart'){
-        htmlFragment = `<p>${jokeData.setup} ${jokeData.delivery}</p>`
-        console.log(jokeData.type)
-        console.log(htmlFragment)
-      }
-    displayJoke.innerHTML = htmlFragment
-}
 
 searchButton.addEventListener('click', (e) => {
         let dateOutput = dateInput.value
-        let stateOutput = state.value
-        console.log(stateOutput)
-    moonMain(dateOutput, stateOutput)
-    joke()
-<<<<<<< HEAD
-<<<<<<< HEAD
+        // let stateOutput = state.value
+        // console.log(stateOutput)
+    moonMain(dateOutput)
     signPicker(dateOutput)
-=======
->>>>>>> d3e244c (new changes to website)
-=======
-<<<<<<< HEAD
->>>>>>> d3e244c (new changes to website)
-=======
->>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
->>>>>>> affff3bbdb1d8801e017a147b6b37b9d89d9e438
+    joke()
 })
 
 const createFragment = (data, moonText) =>{
@@ -71,14 +23,28 @@ const createFragment = (data, moonText) =>{
 }
 
 const createHoroscope = (obj) => {
-    let htmlfragment = `<p>${obj.horoscope}</p>`
+    let htmlfragment = `<p>Your horoscope for today: ${obj.horoscope}</p>`
     displayHoroscope.innerHTML = htmlfragment
 }
 
+const createFragment1 = jokeData => {
+    if (jokeData.type == 'single'){
+    htmlFragment =`<p>And while you're here, would you like to hear a joke? Oh good! Here you go: ${jokeData.joke}</p>`
+    console.log(jokeData.type)
+    console.log(htmlFragment)
+    }else if 
+      (jokeData.type == 'twopart'){
+        htmlFragment = `<p>And while you're here, would you like to hear a joke? Oh good! Here you go: ${jokeData.setup} ${jokeData.delivery}</p>`
+        console.log(jokeData.type)
+        console.log(htmlFragment)
+      }
+    displayJoke.innerHTML = htmlFragment
+}
+
 let data;
-const moonMain = async (dateOutput, stateOutput) => {
+const moonMain = async (dateOutput) => {
     try{
-    let fetchData = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${stateOutput}/${dateOutput}?unitGroup=us&key=PXLCYVMHK8W88EN9J7UFB2NFN&include=days&elements=moonphase,sunrise,sunset&contentType=json`)
+    let fetchData = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Kansas/${dateOutput}?unitGroup=us&key=PXLCYVMHK8W88EN9J7UFB2NFN&include=days&elements=moonphase,sunrise,sunset&contentType=json`)
     let result = await fetchData.json(); //saving the data in a variable named 'result' and at the same time converting it to an object or an array of objects
     data = result; // this is assigning value to the variable 'data' (created on line 10)
     // the difference between fetchData - this is data that's being returned as a string and 'data' is an object or an array of objects
@@ -186,12 +152,12 @@ var usStates = [
     { name: 'WYOMING', abbreviation: 'WY' }
 ];
 
-for(var i = 0; i < usStates.length; i++) {
-    var option = document.createElement("option");
-    option.text = usStates[i].name;
-    option.value = usStates[i].name.split(" ").join("%20");
-    state.add(option);
-}
+// for(var i = 0; i < usStates.length; i++) {
+//     var option = document.createElement("option");
+//     option.text = usStates[i].name;
+//     option.value = usStates[i].name.split(" ").join("%20");
+//     state.add(option);
+// }
 
 const joke = async () => {
   try {
@@ -204,8 +170,6 @@ const joke = async () => {
   } catch (e) {
     console.log('ERROR!', e)
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 console.log(`test`)
@@ -222,10 +186,6 @@ const astroMain = async (data) =>{
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d09cfb0 (merge to the main)
 
 const signPicker = (dateOutput) => {
     let dateSlice = dateOutput.slice(5).split('-').join('')
@@ -261,7 +221,6 @@ const signPicker = (dateOutput) => {
 
 
 
-<<<<<<< HEAD
 // Capricorn Dates: December 22 – January 19 1222 - 119 Capricorn
 // Aquarius Dates: January 20 – February 18 120 -218 Aquarius
 // Pisces Dates: February 19 – March 20 219 - 320  Pisces
@@ -274,25 +233,3 @@ const signPicker = (dateOutput) => {
 // Libra Dates: September 23 – October 22 923 - 1022 Libra
 // Scorpio Dates: October 23 – November 21 1023 - 1121 Scorpio
 // Sagittarius Dates: November 22 – December 21 1122 - 1221 Sagittarius
-=======
-<<<<<<< HEAD
-=======
-
-
-for(var i = 0; i < usStates.length; i++) {
-    var option = document.createElement("option");
-    option.text = usStates[i].name;
-    option.value = usStates[i].abbreviation;
-    state.add(option);
->>>>>>> d09cfb0 (merge to the main)
-=======
->>>>>>> affff3bbdb1d8801e017a147b6b37b9d89d9e438
-}
->>>>>>> d3e244c (new changes to website)
-=======
-}
-<<<<<<< HEAD
->>>>>>> d3e244c (new changes to website)
-=======
->>>>>>> d3e244c1f7ae7510294566a5ea271a84e9f87264
->>>>>>> affff3bbdb1d8801e017a147b6b37b9d89d9e438
