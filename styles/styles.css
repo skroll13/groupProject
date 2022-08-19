@@ -34,7 +34,7 @@ body{
 
 
 /* main image and text*/
-.container {
+.mainImageAndText {
    position: absolute;
    text-align: center;
    color: white;
@@ -47,7 +47,7 @@ body{
    top: 7%;
    left: 50%;
    transform: translate(-50%, -50%);
-   font-family:cursive ;
+  
  }
 
 
@@ -67,12 +67,12 @@ body{
    padding: 0;
    overflow: hidden;
    background-color: #0b182d;
-   font-family: cursive;
+
  }
  
  li {
    float: left;
-   font-family: cursive;
+
  }
  
  li a {
@@ -100,7 +100,8 @@ body{
  
 
  .cursive{
-   font-family: cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
  }
 
 
@@ -123,9 +124,11 @@ body{
    display: flex;
    position: relative;
    margin: 15%;
-   font-family: cursive;
+  
    color: #64939a;
    justify-content: center;
+   cursor: pointer;
+ 
  
  }
 
@@ -255,10 +258,7 @@ label{
   /* position: absolute; */
 }
  
-.zindex1{
-  z-index: 1;
-  /* position: absolute; */
-}
+
 
 .zindex2{
   z-index: 2;
