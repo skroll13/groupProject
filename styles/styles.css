@@ -1,8 +1,8 @@
 body{
 
-   margin: 0px;
-   background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
-  
+  margin: 0px;
+  background-image: url(https://t4.ftcdn.net/jpg/03/11/72/63/360_F_311726370_WUopUflJYzZWTiIPdnP2yZ3xGaNABHZY.jpg);
+
 
 
 }
@@ -34,7 +34,7 @@ body{
 
 
 /* main image and text*/
-.container {
+.mainImageAndText {
    position: absolute;
    text-align: center;
    color: white;
@@ -47,7 +47,7 @@ body{
    top: 7%;
    left: 50%;
    transform: translate(-50%, -50%);
-   font-family:cursive ;
+  
  }
 
 
@@ -67,12 +67,12 @@ body{
    padding: 0;
    overflow: hidden;
    background-color: #0b182d;
-   font-family: cursive;
+
  }
  
  li {
    float: left;
-   font-family: cursive;
+
  }
  
  li a {
@@ -97,18 +97,11 @@ body{
 
 
 
- .moon{
-   height: 100px;
-   width: 100px;
-   border-left: 15px solid #8c9494;
-   border-radius: 100%;
-   transform: rotate(-40deg);
-   
- }
  
 
  .cursive{
-   font-family: cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
  }
 
 
@@ -123,6 +116,7 @@ body{
 
 
 
+
  
 
 
@@ -130,9 +124,11 @@ body{
    display: flex;
    position: relative;
    margin: 15%;
-   font-family: cursive;
+  
    color: #64939a;
    justify-content: center;
+   cursor: pointer;
+ 
  
  }
 
@@ -140,8 +136,10 @@ body{
 
 .cardContainer{
 
- display: inline-block;
+ display: flex;
  justify-content: space-around;
+ height: 500px;
+ width: 500px;
 
  
 }
@@ -153,10 +151,11 @@ body{
  color: #346780;
  font-family: cursive;
  margin-left: 195%;
- background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
+ /* background-image: url(https://unsplash.com/photos/uhjiu8FjnsQ/download); */
  text-align: center;
  /* height: auto;
  width: auto; */
+ background-color: #0b182d;
 }
 
 
@@ -174,23 +173,6 @@ body{
  font-family: 'Times New Roman', Times, serif;
 
 } */
-
-
-
-
-
-/* .cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
-
-
-
-
-
-
-
 
 
 
@@ -255,32 +237,31 @@ label{
  color: orange;
 }
 
-p{
- color: rgb(255, 0, 217);
- font-weight: bold;
+
+
+.displayJokesAndPhase{
+  text-align: center;
+  font-family: cursive;
+  color: #64939a;
 }
+  
 
-
-/* section{
- position: relative;
- width: 100%;
- height: 100vh;
- overflow: hidden;
- background: #000200;
- display: flex;
- justify-content: center;
- align-items: center;
-
+.displayJokesAndPhase{
+  text-align: center;
+  font-family: cursive;
+  color: #64939a;
+  
 }
-
-section .star{
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- pointer-events: none;
-}
-
-section .star.star1{ */
  
+.zindex1{
+  z-index: 1;
+  /* position: absolute; */
+}
+ 
+
+
+.zindex2{
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+}
