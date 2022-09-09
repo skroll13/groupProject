@@ -11,7 +11,7 @@ let displayHoroscope = document.querySelector('.displayHoroscope')
 searchButton.addEventListener('click', (e) => {
         let dateOutput = dateInput.value
         // let stateOutput = state.value
-        // console.log(stateOutput)
+        console.log(dateOutput)
     moonMain(dateOutput)
     signPicker(dateOutput)
     joke()
@@ -44,7 +44,7 @@ const createFragment1 = jokeData => {
 let data;
 const moonMain = async (dateOutput) => {
     try{
-    let fetchData = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Kansas/${dateOutput}?unitGroup=us&key=PXLCYVMHK8W88EN9J7UFB2NFN&include=days&elements=moonphase,sunrise,sunset&contentType=json`)
+    let fetchData = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Kansas/${dateOutput}?unitGroup=us&key=${apiKey}&include=days&elements=moonphase,sunrise,sunset&contentType=json`)
     let result = await fetchData.json(); //saving the data in a variable named 'result' and at the same time converting it to an object or an array of objects
     data = result; // this is assigning value to the variable 'data' (created on line 10)
     // the difference between fetchData - this is data that's being returned as a string and 'data' is an object or an array of objects
